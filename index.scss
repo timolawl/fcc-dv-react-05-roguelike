@@ -1,0 +1,139 @@
+@import url('//fonts.googleapis.com/css?family=Droid+Sans+Mono|Montserrat');
+
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Droid Sans Mono';
+  //1.04rem;
+}
+
+body {
+  background: black;
+  
+}
+
+.info-panel {
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  color: white;
+}
+
+.title {
+  margin-left: 0.5rem;
+
+  &--text1 {
+    font-size: 1.5rem;
+    color: cyan;
+  }
+  &--text2 {
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+
+.stats {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  
+  &--title {
+    color: gray;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+  }
+  
+  &--attr {
+    color: gray;
+  }
+}
+
+.legend {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  
+  &--title {
+    color: gray;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+  }
+  &--player {
+    color: yellow;
+  }
+  &--enemy {
+    color: red;
+  }
+  &--boss {
+    color: maroon;
+  }
+  &--weapon {
+    color: silver;
+  }
+  &--potion {
+    color: green;
+  }
+  &--staircase {
+    color: blue;
+  }
+}
+
+.dungeon {
+  
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  
+  &--title {
+    color: gray;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+  }
+  
+  &--attr {
+    color: gray;
+  }
+}
+
+.map {
+  font-size: 1rem; //3.4vmin;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+ 
+  /*
+  @media (max-width: 1400px) {
+    text-align: right;
+    right: 0;
+    margin-right: 0.5rem;
+  }
+  @media (min-width: 1401px), (max-height: 525px) {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  */
+}
+
+.outcome {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: -0.5rem;
+  z-index: 2;
+  &--win {
+    background: #333;
+    color: cyan;
+  }
+  &--loss {
+    background: maroon;
+    color: white;
+  }
+}
+
